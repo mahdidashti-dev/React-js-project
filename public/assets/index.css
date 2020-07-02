@@ -1,0 +1,554 @@
+body{
+    direction: rtl;
+    text-align: right;
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+body{
+    
+    height: 2000px;
+}
+
+#navbar{
+    text-align: right;
+    position:fixed;
+    padding: 20px 40px;
+    right: 0;
+    left:0;
+    top:0;
+    /* background-color: #EDBD95; */
+    z-index: 100;
+    transition-duration: 0.5s;
+}
+#logo{
+    display: inline;
+}
+#logo a{
+    color: white;
+}
+#logo h4{
+    display: inline;
+    color: white;
+}
+
+ul li a:hover{
+    text-decoration: none;
+}
+
+.samples{
+    text-align: right;
+}
+
+#toggler{
+    position: absolute;
+    left:40px;
+    top:3px;
+    color:white;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background-color: hsl(236, 32%, 26%);
+    border-radius: 5px;
+    
+}
+
+  
+
+  #toggler:hover {
+    cursor: pointer;
+    background-color: #0078BA;
+    transform-origin: center bottom;
+    /* transform: scaleY(0);
+    transition: transform 0.25s ease-in-out; */
+    transform-origin: center top;
+    transform: scaleY(1);
+
+  }
+  
+
+
+
+#nav{
+    position: fixed;
+    background-color:rgba(0,0,0,0.8);
+    width: 240px;
+    top:0;
+    right:-240px;
+    bottom: 0;
+    line-height: 2.5rem;
+    padding-top: 30px;
+    transition-duration: 0.4s;
+  
+    
+}
+#nav a{
+
+    color: white;
+    font-weight: 500;
+    padding: 0 20px;
+    
+}
+
+#nav ul li{
+    padding: 10px;
+    text-align: center;
+}
+
+ #nav a:hover{
+    border-radius: 5px;
+    color: rgba(0,0,0,0.7);
+    background-color: white; 
+    padding: 7px;
+   
+    transition: 0.5s;
+} 
+
+@media(min-width:992px){
+    #navbar{
+        display:flex;
+    }
+
+    #toggler{
+        display: none;
+    }
+    
+    #nav{
+        width: auto;
+        position: static;
+        background-color: transparent;
+        padding: 0;
+    }
+    #nav li{
+        float:right;
+        list-style: none;
+    }
+   #logo{
+       order: 1;
+       margin-right: auto;
+   }
+   #logo h4{
+       margin-top:4px;
+       margin-bottom: 0;
+   }
+}
+
+
+#top-carousel .carousel-item{
+    height: 100vh;
+    min-height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#top-carousel .carousel-overlay{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0 , 0 , 0.4);
+    padding-top: 100px;
+}
+
+
+#top-carousel .carousel-content{
+    color: white;
+    max-width: 900px;
+    margin: 10% auto;
+    padding: 0 70px;
+}
+
+
+#top-carousel .carousel-title{
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+
+#top-carousel .carousel-text{
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+
+
+@media (min-width: 768px) {
+    #top-carousel .carousel-title{
+        font-size: 36px;
+    }
+}
+
+
+#about{
+    background: url("/photo/2340.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    padding: 60px 0;
+    position: relative;
+    background-attachment: fixed;  
+    /* برای اینکه عکس در هنگام اسکرول ثابت بماند از background-attachment */
+}
+
+.section-header h3 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.section-header p {
+    text-align: center;
+    padding-bottom: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+  
+    padding: 10px;
+}
+
+
+#about::before{
+    position: absolute;
+    content: '';
+    /* مقدار content برای اینکه شفاف شود و چون از befor | استفاده کرده ایم حتما باید باشد */
+    background-color: rgba(255 , 255 , 255 , 0.3);
+    top:0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.bord{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+}
+
+#about .container{
+    position: relative;
+    /* برای اینکه متن بیاید بالا تر */
+}
+
+#about .card-text{
+    color:#444;
+    font-size: 14px;
+    text-align: justify;
+}
+
+
+.dark{
+    background-color:#88d4e3;
+}
+
+#services{
+    padding: 60px 0;
+}
+
+#services h4{
+    margin-right: 35px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    vertical-align: baseline;
+}
+
+#services .description{
+    margin: 0 55px 40px 20px;
+    color: #555;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+#stats{
+    /* background:  url("/photo/counter.jpg") center / cover no-repeat fixed; */
+    background-color: #F7F7F7;
+    padding: 60px 0 10px 0;
+    color: black;
+    
+}
+
+.topPart{
+    margin: -100px 30px 0 30px;
+    background: #8E2DE2;  
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+    border-radius: 10px;
+
+}
+.pad{
+    padding-top: 10px;
+}
+.pad:hover{
+    border-bottom: 1px solid black;
+}
+#stats span{
+    font-size: 56px;
+    font-weight: 600;
+    color:greenyellow;
+    font-family: yekanf; 
+    /* برای اینکه فونت اعداد فارسی شود از قابلیت فونت بالا استغاده می کنیم */
+}
+
+#stats h5{
+    color: black;
+    font-size: 20px;
+    font-family: yekan;
+    margin-bottom: 60px;
+}
+
+
+#skills{
+    padding: 60px 0;
+    background-color: #F5F5FC;
+}
+
+#skills .progress {
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+
+#skills .progress-bar{
+    transition-duration: 1.5s;
+    width: 0;
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+#skills-content{
+    box-shadow: 0 8px 30px 0 rgba(92, 91, 91, 0.1);
+    background-color: white;
+    padding: 15px;
+}
+
+.back{
+    background: #f12711; 
+   background: linear-gradient(to right, #f5af19, #f12711);
+   
+}
+.title{
+    font-family:yekan ;
+}
+
+.textBorede{
+    border: 1px solid #eee;
+    background: white;
+}
+
+
+
+
+
+#portfolio{
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+#portfolio-filter{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#portfolio-filter li button{
+    flex-basis: 90px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0 , 0 , 0 , 0.1);
+    transition-duration: 0.3s;
+}
+
+
+#portfolio-filter button:hover , #portfolio-filter .filter-active{
+    background-color: rgb(34, 60, 204);
+    color: white;
+}
+
+
+widthItem{
+    width: 700px !important;
+}
+
+
+
+
+/* ///////////////////////////////////////// */
+
+/* add product part */
+.addProduct{
+    background-image:linear-gradient(#4facfe,#00f2fe);
+    border-radius: 2%;
+  }
+form {
+    width: 80%;
+    
+   
+  }
+  
+  /* form * {
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    display: block;
+  } */
+  
+  .control input, .control textarea{
+    background: none;
+    border: 1px solid #999;
+    color: #111;
+    text-indent: 10px;
+    font-size: 1.3rem;
+  }
+  
+  form input[type="submit"]{
+    width: 30%;
+    font-size: 1.3rem;
+    cursor: pointer;
+  
+  }
+  
+  form input[type="submit"]:hover {
+   color: #fff;
+    background: rgb(0, 189, 189);
+    -webkit-box-shadow: 0px 10px 18px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 18px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 18px -6px rgba(0,0,0,0.75);
+  }
+  
+ 
+  
+  .delete {
+    padding: 10px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  .delete:hover {
+    background: red;
+    color: #fff;
+    -webkit-box-shadow: 0px 10px 18px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 18px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 18px -6px rgba(0,0,0,0.75);
+  }
+  
+ 
+
+
+
+
+  
+
+  .borderProduct{
+      border: 2px solid black;
+  }
+
+
+  .productPicture{
+    float: left;
+    position: relative;
+  }
+
+  .rigth{
+    text-align: right;
+}
+
+
+
+
+#footer{
+    background-color: #222;
+    padding-top: 60px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#footer h5{
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 2px #555 solid;
+    margin-bottom: 20px;
+}
+
+#footer .col-lg-3{
+    margin-bottom: 40px;
+}
+
+#footer li{
+    padding: 6px 0;
+    border-bottom: 1px solid #333;
+}
+
+#footer li:first-child{
+    padding-top: 0;
+}
+
+#footer li a{
+    color: #ddd;
+    transition-duration: 0.3s;
+}
+
+#footer li a:hover{
+    color: #2c6;
+}
+
+#footer li i{
+    color: #ddd;
+    padding-left: 8px;
+}
+
+#footer .links{
+    margin-top: 60px;
+}
+
+#footer .links a{
+    font-size: 18px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background-color: #444;
+    color: #eee;
+    line-height: 2.1em;
+    margin-left: 4px;
+    border-radius: 50%;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+#footer .links a:hover {
+    background-color: #18d26e;
+    color: #fff;
+}
+
+#footer input {
+    float: right;
+    border: 0;
+    padding: 4px;
+    width: 70%;
+}
+
+#footer button{
+    float: right;
+    background-color: #2c6;
+    border: 0;
+    width: 30%;
+    padding: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#footer button:hover{
+    background-color: #195;
+}
